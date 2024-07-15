@@ -16,7 +16,7 @@ class Basic:
         self._train_model()
 
     def __str__(self) -> str:
-        return f'Score: {self.score}'
+        return f'Score: {self.score} con el modelo de entrenamiento de matriz {self.X_train_transformed}'
 
     def _train_model(self):
         self._vectorizer_X()
