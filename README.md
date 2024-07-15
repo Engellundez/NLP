@@ -102,7 +102,7 @@ Técnica común en el NLP en donde cada número va a representar una palabra
 -   Tokenización
 -   Mapeo.
 
-### Tokenización
+## Tokenización
 
 -   Dividir el texto en tokens
 -   Los tokens son las unidades individuales de un texto
@@ -135,3 +135,32 @@ Técnica común en el NLP en donde cada número va a representar una palabra
 ##### Relevancia del volumen de datos para el aprendizaje de modelos
 
 -   El volumen de datos es crucial para el aprendizaje de modelos
+
+## Stemming y Lemmatization
+
+-   El stemming es una técnica más simple que elimina los sufijos de la palabra
+-   La lemmatization es una técnica más sofisticada que utiliza las reglas del lenguaje para obtener la base o raíz de una palabra
+
+    -   Este puede llegar a ser más tardado
+
+    -   para la lemmatization ocupe 2 modulos extra
+
+        ```bash
+            pip install spacy
+            python -m spacy download es_core_news_sm
+        ```
+
+    -   Puede ser más efectiva que el stemming, pero tambien es más costosa computacionalmente
+    -   El uso de la lemmatization puede requerir el etiquetado previo.
+
+    ##### Aplicaciones reales
+
+    -   Asistentes virtuales y chatbots
+    -   Análisis de sentimientos
+    -   Motores de búsqueda
+    -   Sistemas de recomendación
+    -   Aplicación en publicidad online y etiquetas de redes sociales
+
+### Ya existen Datasets que podemos usar
+
+Hay varios en especial en la web [kaggle](https://www.kaggle.com/datasets)
